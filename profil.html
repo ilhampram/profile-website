@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Saya</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: grey;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 16px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #34495e;
+      padding: 8px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+
+    section {
+      background-color: white;
+      padding: 16px;
+      margin-bottom: 16px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    .label {
+      font-weight: bold;
+    }
+
+    /* Form kontak sederhana */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    input, textarea {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      background-color: #2c3e50;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      width: 120px;
+    }
+
+    button:hover {
+      background-color: #1b2836;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      padding: 10px 0 16px;
+    }
+
+    /* Biar tetap enak dilihat di HP */
+    @media (max-width: 600px) {
+      nav {
+        font-size: 13px;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bagian header -->
+  <header>
+    <h1>Ilham Pramudia</h1>
+    <p>Mahasiswa TI - Web Development</p>
+  </header>
+
+  <!-- Menu navigasi sederhana -->
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#skill">Skill</a>
+    <a href="#project">Project</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Section Tentang -->
+    <section id="tentang">
+      <h2>Tentang Saya</h2>
+      <p>
+        Halo, nama saya <span class="label">Ilham Pramudia</span>.  
+        Saya adalah <span class="label">Web Development</span>
+        yang tertarik pada <span class="label">pengembangan web</span>.
+      </p>
+      <p>
+        Saat ini saya sedang belajar dasar-dasar pemrograman seperti HTML, CSS, dan JavaScript.
+        Saya suka membuat project sederhana untuk melatih logika dan kreativitas.
+      </p>
+    </section>
+
+    <!-- Section Skill -->
+    <section id="skill">
+      <h2>Skill</h2>
+      <ul>
+        <li>HTML dasar</li>
+        <li>CSS dasar</li>  
+        <li>JavaScript dasar</li>
+      </ul>
+    </section>
+
+    <!-- Section Project -->
+    <section id="project">
+      <h2>Project Sederhana</h2>
+
+      <p><span class="label">1. Uang kas</span></p>
+      <p>
+        Deskripsi singkat tentang project: Website sederhana yang menampilkan
+        biodata atau sistem kas kecil dengan fitur input dan tampil data.
+      </p>
+      <p>
+        Teknologi yang digunakan: [HTML, CSS, JavaScript / PHP / dsb.]
+      </p>
+      <hr style="margin: 12px 0;">
+
+      <!-- <p><span class="label">2. [Nama Project 2]</span></p>
+      <p>
+        Deskripsi singkat project kedua. Tulis saja apa yang sudah pernah kamu buat,
+        meskipun masih sangat sederhana.
+      </p> -->
+    </section>
+
+    <!-- Section Kontak -->
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <p>
+        Jika ingin menghubungi saya, silakan kirim pesan melalui form di bawah ini
+        atau gunakan email: <span class="label">ilhampramudia333@gmail.com</span>.
+      </p>
+
+      <form>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" placeholder="Nama Anda">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="email@contoh.com">
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" rows="4" placeholder="Tuliskan pesan Anda"></textarea>
+
+        <button type="button">Kirim</button>
+      </form>
+
+      <p style="font-size: 12px; color: #777; margin-top: 8px;">
+        
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Ilham Pramudia.
+  </footer>
+
+</body>
+</html>
